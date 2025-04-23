@@ -1,0 +1,86 @@
+# -------------------------------------------------------------------------------------------------
+# Redis Connection Settings
+# -------------------------------------------------------------------------------------------------
+
+Redis:
+  Host: ""
+  Port: 6379
+  User: ""
+  Password: ""
+
+# -------------------------------------------------------------------------------------------------
+# MongoDB Connection Settings
+# -------------------------------------------------------------------------------------------------
+
+MongoDB:
+  Connection_String: ""
+  Database: "flocksystem"
+
+# -------------------------------------------------------------------------------------------------
+# MOTD Settings, you can use a minimessage-like format
+# -------------------------------------------------------------------------------------------------
+
+MOTD: "     §8▬§2▬§a▬§r <gradient=#3aa629,#38d620><bold>ZFLOCKII.DE</bold></gradient> §7✤ §8[§f§lEVENTS§8] §7✤ §8[§f§l1.21.X§8] §a▬§2▬§8▬\n                  §8▬ <gradient=#347a2a,#1aa605>ᴛᴡɪᴛᴄʜ.ᴛᴠ/ᴢFʟᴏᴄᴋɪɪ</gradient> §8▬"
+Maintenance_MOTD: "     §8▬§4▬§c▬§r <gradient=#c62929,#d62020><bold>ZFLOCKII.DE</bold></gradient> §7✤ §8[§c§lWARTUNG§8] §7✤ §8[§c§l1.21.5§8] §c▬§4▬§8▬\n     §8▬ <gradient=#7a2a2a,#a60505>§cGrund: %reason% | Bis: %end_time%</gradient> §8▬"
+
+# -------------------------------------------------------------------------------------------------
+# Tablist Settings, you can use a minimessage-like format
+# -------------------------------------------------------------------------------------------------
+
+Tablist:
+  Header:
+    - ''
+    - " §a🗡 §l§nEvent-Netzwerk§r §a🗡"
+    - '§aᴢғʟᴏᴄᴋɪɪ.ᴅᴇ'
+    - ''
+    - '§7ᴅᴇʀᴢᴇɪᴛ §f%online% §7sᴘɪᴇʟᴇʀ ᴠᴇʀʙᴜɴᴅᴇɴ'
+    - ''
+  Footer:
+    - ''
+    - ' §a§nᴛᴡɪᴛᴄʜ§r                       §a§nᴅɪѕᴄᴏʀᴅ§r  '
+    - '    §fᴛᴡɪᴛᴄʜ.ᴛᴠ/ᴢғʟᴏᴄᴋɪɪ        §fᴅɪsᴄᴏʀᴅ.ᴢғʟᴏᴄᴋɪɪ.ᴅᴇ     '
+    - ''
+
+# -------------------------------------------------------------------------------------------------
+# The formats used in the {timestamp} and {location} variables. For help with timestamp, see:
+# https://docs.oracle.com/javase/8/docs/api/java/text/SimpleDateFormat.html
+# -------------------------------------------------------------------------------------------------
+Timestamp_Format: "dd.MM.yyyy HH:mm:ss"
+Location_Format: "{world} [{x}, {y}, {z}]"
+
+# -------------------------------------------------------------------------------------------------
+# What commands should trigger the main plugin command group?
+#
+# * THE FIRST ALIAS IS THE MAIN LABEL, PLEASE DO NOT REMOVE IT. *
+# -------------------------------------------------------------------------------------------------
+Command_Aliases: [ flock ]
+
+# -------------------------------------------------------------------------------------------------
+# What language should we use for messages? If it exists, the language file will be copied 
+# to your messages/ folder where you can edit it.
+# -------------------------------------------------------------------------------------------------
+Locale: en
+
+# -------------------------------------------------------------------------------------------------
+# The prefix used in front of most chat or console messages. You can manually use it with
+# {plugin_prefix} variable anywhere.
+# -------------------------------------------------------------------------------------------------
+Prefix: "&8&l➽ &a&lFlockSystem &8&l•&7 "
+
+# -------------------------------------------------------------------------------------------------
+# Time of some plugin's operations is measured. You can also use the LagCatcher class to invoke
+# this feature. We log a console message if an operation takes over the time below (milliseconds). 
+# Set to -1 to disable.
+# -------------------------------------------------------------------------------------------------
+Log_Lag_Over_Milis: 100
+
+# -------------------------------------------------------------------------------------------------
+# List of section names that will print informative messages about their features.
+# The Debugger class utilizes this key and will only print messages for sections enabled below.
+# -------------------------------------------------------------------------------------------------
+Debug: [ ]
+
+# -------------------------------------------------------------------------------------------------
+# Do not change this value, otherwise it will corrupt your plugin installation!
+# -------------------------------------------------------------------------------------------------
+Version: 1
