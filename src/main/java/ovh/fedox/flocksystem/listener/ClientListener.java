@@ -4,7 +4,6 @@ package ovh.fedox.flocksystem.listener;
 import com.velocitypowered.api.event.Subscribe;
 import com.velocitypowered.api.event.player.ServerPostConnectEvent;
 import com.velocitypowered.api.proxy.Player;
-import com.velocitypowered.api.proxy.server.RegisteredServer;
 import net.kyori.adventure.text.Component;
 import org.mineacademy.vfo.Common;
 import org.mineacademy.vfo.remain.Remain;
@@ -38,17 +37,18 @@ public final class ClientListener {
 					Common.tell(proxiedPlayer, "§7" + event.getPlayer().getUsername() + " §7hat versucht, den Server zu betreten, während der Wartungsmodus aktiviert ist.");
 				}
 			}
-		} else {
-			RegisteredServer lobbyServer = Remain.getServer("lobby");
-
-			if (lobbyServer == null) {
-				Common.logFramed("Lobby server not found, disconnecting " + event.getPlayer().getUsername());
-				event.getPlayer().disconnect(Component.text("§4Lobby-Server nicht gefunden"));
-				return;
-			}
-
-			event.getPlayer().createConnectionRequest(lobbyServer).connect();
 		}
+//		} else {
+//			RegisteredServer lobbyServer = Remain.getServer("lobby");
+//
+//			if (lobbyServer == null) {
+//				Common.logFramed("Lobby server not found, disconnecting " + event.getPlayer().getUsername());
+//				event.getPlayer().disconnect(Component.text("§4Lobby-Server nicht gefunden"));
+//				return;
+//			}
+//
+//			event.getPlayer().createConnectionRequest(lobbyServer).connect();
+//		}
 
 	}
 
